@@ -1,13 +1,13 @@
 
 // defining the element ID's
 
-    const rockButton = document.getElementById("rock");
-    const paperButton = document.getElementById("paper");
-    const scissorsButton = document.getElementById("scissors");
-    const resultDiv = document.getElementById("result");
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
+const resultDiv = document.getElementById("result");
 
-    //computer choice function
-    function compChoice() {
+//computer choice function
+function compChoice() {
     const choices = ["Rock", "Paper", "Scissors"];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
@@ -31,14 +31,14 @@ scissorsButton.addEventListener("click", () => {
     game(human, computer);
 });
 
-    //game functionality
-    function game(humanChoice, compChoice) {
+//game functionality
+function game(humanChoice, compChoice) {
     if (humanChoice === compChoice) {
         resultDiv.textContent = 'It\'s a draw!';
     } else if (
-    (humanChoice === 'Rock' && compChoice === 'Scissors') ||
-    (humanChoice === 'Paper' && compChoice === 'Rock') ||
-    (humanChoice === 'Scissors' && compChoice === 'Paper')
+        (humanChoice === 'Rock' && compChoice === 'Scissors') ||
+        (humanChoice === 'Paper' && compChoice === 'Rock') ||
+        (humanChoice === 'Scissors' && compChoice === 'Paper')
     ) {
         resultDiv.textContent = "You win!";
     } else {
