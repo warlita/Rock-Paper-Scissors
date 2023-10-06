@@ -33,16 +33,19 @@ scissorsButton.addEventListener("click", () => {
 
 //game functionality
 function game(humanChoice, compChoice) {
+    const choicesDiv = document.getElementById('choices');
+    choicesDiv.textContent = `Computer chose: ${compChoice}`;
     if (humanChoice === compChoice) {
-        resultDiv.textContent = 'It\'s a draw!';
+        choicesDiv.textContent = 'You and the computer chose the same weapon!';
+        resultDiv.textContent = 'Play again to get a winner!';
     } else if (
         (humanChoice === 'Rock' && compChoice === 'Scissors') ||
         (humanChoice === 'Paper' && compChoice === 'Rock') ||
         (humanChoice === 'Scissors' && compChoice === 'Paper')
     ) {
-        resultDiv.textContent = "You win!";
+        resultDiv.textContent = `You chose: ${humanChoice} and YOU WIN!`;
     } else {
-        resultDiv.textContent = "Computer won. Try again.";
+        resultDiv.textContent = `You chose: ${humanChoice} and you lost. Try again`;
     }
 
 };

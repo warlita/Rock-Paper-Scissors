@@ -40,3 +40,26 @@ p {
   border: 2px solid rebeccapurple;
   padding: .5em;
 }
+
+#rock, #paper, #scissors {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0b7ca9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+ background-color: #99b7c2
+}
+
+#rock:active, #paper:active, #scissors:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
