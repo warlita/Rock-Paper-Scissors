@@ -1,7 +1,7 @@
 # Project Name: Warlita's Corner
 
 ## Description
-This is primarily a blog app. It currently showcases a CLI game transitioned into a GUI game.
+This Rock Paper Scissors. It currently showcases a CLI game transitioned into a GUI game.
 
 ## Major Functions
 - Shows a working Navigation Bar
